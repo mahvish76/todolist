@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap');
+
+*,
+*::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.layout {
+  margin-bottom: 5rem;
+}
+h1,
+h2 {
+  font-family: 'Roboto', sans-serif;
+}
+p,
+span {
+  padding: 0;
+  margin: 0;
+}
+.nav-header,
+.footer
+ {
+  background: rgba(35,170,170,1.00);
+  padding: 0;
+}
+/* footer */
+.footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: auto;
+}
+.f-logo img {
+  display: flex;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.f-menu,
+.f-share {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.f-item {
+  padding: 0.5rem;
+}
+.f-menu a {
+  color: #fff;
+  font-size: 1em;
+  font-family: 'Poppin', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+}
+.icon {
+  width: 35px;
+  height: 35px;
+  margin: 0.5rem;
+  font: 900 1.5em 'Poppin', sans-serif;
+  color: #fff;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  text-align: center;
+}
+
+.btn-dropdown {
+  background-color: rgba(254,183,8, 0.8);
+}
+.link {
+  color: rgb(191, 78, 113);
+  text-decoration: none;
+}
+.link:hover,
+.link:focus,
+.link:active {
+  text-decoration: underline;
+  color: rgb(191, 78, 113);
+}
+.register,
+.login,
+.add-form-list {
+  background-color: #eee;
+  color: #444;
+}
+.register input:focus,
+.login input:focus,
+.add-form-list input:focus
+ {
+  box-shadow: none;
+  border: 1px solid rgb(191, 78, 113);
+  outline: none;
+}
+.list {
+  padding: 1rem;
+  margin-bottom: .5rem;
+  background-color: #eee;
+}
+.bt-dlt {
+  background-color: rgb(191, 78, 113);
+  border: 0;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-size: 13px;
+  display: block;
+  margin-left: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgb(0,0,0,0.2);
+  transition: all 0.3s;
+}
+.bt-dlt:hover,
+.bt-dlt:focus,
+.bt-dlt:active {
+  outline: 0;
+  box-sizing: none;
+  background-color: rgb(191, 78, 113, 0.9);
+}
+.note {
+  font-size: 1.2rem;
+  font-family: 'Poppin', sans-serif;
+  padding: 0px;
+  width: 100%;
+  display: inline-block;
+}
+list.completed {
+  background-color: green;
+}
+@media (min-width: 576px) {
+  .register,
+  .login,
+  .add-form-list
+   {
+    max-width: 300px;
+  }
+  .list {
+    width: 100%;
+    max-width: 500px;
+  }
+  .f-logo img {
+    margin-bottom: 0;
+  }
+}
