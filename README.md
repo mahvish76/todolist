@@ -23,7 +23,3 @@ localhost:3000
 * 27] password: 'root1234' // place yours password
 * after run the query please uncomment the database option or it will give error.
 * And then uncomment table line no 44 to 61 to create the table.
-
-
-## Note
-I have some bug on my client side, context api is not working properly so when you will use brwser to navigate you will see logout button, even when you are not authenticated. :(
